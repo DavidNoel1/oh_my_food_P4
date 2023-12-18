@@ -1,13 +1,58 @@
+/**button section**/
+.button-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 57px;
+    padding-top: 39px;
+    background-color: var(--grey);
+}
+
+.button-section-txt {
+    padding-bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-section h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-section p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--second-grey);
+}
+
+
 /**fonctionnements**/
 .fonctionnement-section {
-    padding-left: 20px;
     margin-bottom: 68px;
+    gap: 26px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
 }
 .fonctionnement {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+    padding-left: 10px;
+}
+
+.fonctionnement-section h2 {
+    padding-left: 20px;
 }
 
 .fonctionnement-number {
@@ -19,6 +64,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 10px;
+    position: relative;
     
 }
 
@@ -26,11 +73,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 2px var(--white) solid;
     border-radius: 15px;
     height: 72px;
     background-color: var(--grey);
     width: 90%;
+    padding-left: 30px;
+    gap: 30px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 /**Restaurants**/
 .restaurants {
@@ -40,14 +89,14 @@
     background-color: var(--grey);
     padding-left: 17px;
     padding-right: 18px;
-    margin-top: 54px;
-    margin-bottom: 66px;
+    padding-top: 54px;
+    padding-bottom: 66px;
 }
 
 .restaurants-cards {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 18px;
     justify-content: space-between;
 }
 
@@ -78,24 +127,17 @@
 }
 
 .card-title {
-    color: #000;
-    font-family: Roboto;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 16px 0 0 16px;
 }
 
 .card-subtitle {
-    color: #000;
-    font-family: Roboto;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+    padding: 5px 0 12px 16px
 }

@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 22px 25px 22px 25px;
+    gap: 7px;
 }
 
 .footer h2 {
@@ -12,6 +13,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 9px;
 }
 
 .footer p {
@@ -25,4 +27,6 @@
 .footer-row {
     display: flex;
     flex-direction: row;
+    gap: 7px;
+    color: var(--White, #FFF);
 }
