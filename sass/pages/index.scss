@@ -155,6 +155,14 @@
         box-sizing: border-box;
         margin-top: 8px;
         height: 49%;
+        position: relative;
+
+        &-heart {
+            position: absolute;
+            right: 25px;
+            bottom: 45px;
+
+        }
 
         &-title {
             font-size: 18px;

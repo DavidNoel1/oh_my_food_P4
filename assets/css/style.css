@@ -275,6 +275,12 @@ a {
   box-sizing: border-box;
   margin-top: 8px;
   height: 49%;
+  position: relative;
+}
+.card-content-heart {
+  position: absolute;
+  right: 25px;
+  bottom: 45px;
 }
 .card-content-title {
   font-size: 18px;
