@@ -74,6 +74,11 @@ a {
   border: none;
 }
 
+.main-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .section-title {
   font-size: 24px;
   font-style: normal;
@@ -102,7 +107,11 @@ a {
   display: flex;
   flex-direction: column;
   padding: 22px 25px 22px 25px;
+}
+.footer-nav {
   gap: 7px;
+  display: flex;
+  flex-direction: column;
 }
 .footer-row {
   display: flex;
@@ -121,7 +130,7 @@ a {
   padding-bottom: 9px;
 }
 
-.footer p {
+.footer li {
   color: var(--White, #FFF);
   font-size: 16px;
   font-style: normal;
@@ -129,6 +138,36 @@ a {
   line-height: normal;
 }
 
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .main-container {
+    max-width: 1440px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+    height: 114px;
+    position: relative;
+  }
+  .footer-nav {
+    gap: 7px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 64px;
+    right: 230px;
+  }
+  .footer h2 {
+    padding-left: 16px;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+  }
+}
 /**button section**/
 .button-section {
   display: flex;
@@ -219,8 +258,6 @@ a {
 /**Restaurants**/
 .restaurants {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: var(--grey);
   padding-left: 17px;
   padding-right: 18px;
@@ -281,6 +318,13 @@ a {
   position: absolute;
   right: 25px;
   bottom: 45px;
+}
+.card-content-heart:hover {
+  color: red;
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5em;
 }
 .card-content-title {
   font-size: 18px;
