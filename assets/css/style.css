@@ -39,20 +39,35 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(to bottom, var(--pink), var(--purple));
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   padding: 13px 16px 13px 16px;
   height: 50px;
   color: var(--white);
+  transition: background-color 1s ease;
+}
+.button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  transition: background-color 1s ease;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+.card-content-heart {
+  position: absolute;
+  right: 33px;
+  bottom: 28px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.card-content-heart-filling {
+  position: absolute;
+  right: 33px;
+  bottom: 28px;
+  opacity: 0;
+}
+
+.card-content-heart-filling:hover {
+  opacity: 1;
 }
 
 .search-bar {
@@ -74,9 +89,49 @@ a {
   border: none;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.spinner {
+  animation: fadein 3s ease-out forwards;
+}
+
+.spinner-container {
+  position: fixed;
+  z-index: 9999;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 16px solid var(--primary-color);
+  border-top: 16px solid var(--pink);
+  border-radius: 50%;
+  animation: spin 2s linear;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .main-container {
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
@@ -168,6 +223,15 @@ a {
     right: 45px;
   }
 }
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /**button section**/
 .button-section {
   display: flex;
@@ -313,18 +377,6 @@ a {
   margin-top: 8px;
   height: 49%;
   position: relative;
-}
-.card-content-heart {
-  position: absolute;
-  right: 25px;
-  bottom: 45px;
-}
-.card-content-heart:hover {
-  color: red;
-  content: "\f004";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1.5em;
 }
 .card-content-title {
   font-size: 18px;

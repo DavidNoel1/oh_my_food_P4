@@ -1,3 +1,12 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /**button section**/
 .button-section {
     display: flex;
@@ -154,21 +163,6 @@
         margin-top: 8px;
         height: 49%;
         position: relative;
-
-        &-heart {
-            position: absolute;
-            right: 25px;
-            bottom: 45px;
-            
-
-            &:hover {
-                 color: red;
-                 content: "\f004";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            font-size: 1.5em;
-            }
-        }
 
         &-title {
             font-size: 18px;
