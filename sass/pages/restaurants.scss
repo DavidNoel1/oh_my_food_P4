@@ -1,8 +1,18 @@
+.restaurants-title {
+    color: var(--Black, #101010);
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .restaurants-section {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-sizing: border-box;
     background-color: var(--grey);
+
 
     & h2 {
     font-size: 16px;
@@ -10,6 +20,7 @@
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
+    padding-bottom: 12px;
     }
 
     &-card {
@@ -21,5 +32,6 @@
     object-fit: cover;
     position:relative;
     background-color: var(--white);
+    padding: 15px;
     }
 }

@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media screen and (min-width:1025px) {
     body {
         display: flex;
         justify-content: center;
@@ -6,6 +6,10 @@
     
     .main-container {
         max-width: 1440px;
+    }
+
+    .fonctionnement {
+        width: 31%;
     }
 
     .footer {

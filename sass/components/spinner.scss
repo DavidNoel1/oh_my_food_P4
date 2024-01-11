@@ -10,9 +10,6 @@
       opacity: 0;
     }
 }
-  .spinner {
-    animation: fadein 3s ease-out forwards;
-  }
   
   
   .spinner-container {
@@ -29,6 +26,10 @@
     border: 16px solid var(--primary-color); 
     border-top: 16px solid var(--pink); 
     border-radius: 50%; 
-    animation: spin 2s linear; 
     background: rgba(0,0,0,0.1);
+    animation: spin 2s linear, fadein 3s ease-out forwards; 
   }
+
+  
+
+  
