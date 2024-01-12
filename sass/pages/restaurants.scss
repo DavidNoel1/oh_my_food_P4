@@ -5,6 +5,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-left: 15px;
+}
+
+.restaurants-menus {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
 }
 
 .restaurants-section {
@@ -12,6 +19,8 @@
     border-top-right-radius: 20px;
     box-sizing: border-box;
     background-color: var(--grey);
+    padding-left: 15px;
+    padding-right: 15px;
 
 
     & h2 {
@@ -20,7 +29,12 @@
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
-    padding-bottom: 12px;
+    padding-top: 40px;
+    margin-bottom: 12px;
+    border-bottom: 3px solid var(--green);
+    box-sizing: border-box;
+    width: 40px;
+    padding-bottom: 10px;
     }
 
     &-card {
@@ -33,5 +47,21 @@
     position:relative;
     background-color: var(--white);
     padding: 15px;
+
+    & h3 {
+        font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        & p {
+            font-size: 15.043px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
     }
-}
+    }
+
+    

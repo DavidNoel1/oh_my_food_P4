@@ -203,10 +203,6 @@ img {
   .fonctionnement {
     width: 31%;
   }
-  .restaurants-cards {
-    display: flex;
-    flex-direction: row;
-  }
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -446,6 +442,13 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-left: 15px;
+}
+
+.restaurants-menus {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
 }
 
 .restaurants-section {
@@ -453,6 +456,8 @@ a {
   border-top-right-radius: 20px;
   box-sizing: border-box;
   background-color: var(--grey);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .restaurants-section h2 {
   font-size: 16px;
@@ -460,7 +465,12 @@ a {
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
-  padding-bottom: 12px;
+  padding-top: 40px;
+  margin-bottom: 12px;
+  border-bottom: 3px solid var(--green);
+  box-sizing: border-box;
+  width: 40px;
+  padding-bottom: 10px;
 }
 .restaurants-section-card {
   border-radius: 20px;
@@ -472,6 +482,53 @@ a {
   position: relative;
   background-color: var(--white);
   padding: 15px;
+}
+.restaurants-section-card h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.restaurants-section-card p {
+  font-size: 15.043px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.button-restaurants {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 57px;
+  padding-top: 39px;
+  background-color: var(--grey);
+  width: 186px;
+}
+.button-restaurants-txt {
+  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button-restaurants h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-restaurants p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--second-grey);
 }
 
 /*# sourceMappingURL=style.css.map */
