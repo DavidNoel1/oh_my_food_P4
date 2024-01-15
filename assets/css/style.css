@@ -77,16 +77,18 @@ img {
 .card-content-heart {
   position: absolute;
   right: 33px;
-  bottom: 47px;
+  bottom: 30px;
 }
 
 .card-content-heart-filling {
   position: absolute;
   right: 33px;
-  bottom: 47px;
+  bottom: 30px;
   opacity: 0;
   transition: opacity 0.7s ease-in-out;
-  color: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-image: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .card-content-heart-filling:hover {
@@ -97,6 +99,10 @@ img {
   position: absolute;
   right: 50px;
   top: 52px;
+}
+
+.fa-heart {
+  font-size: 1.5em;
 }
 
 .search-bar {
@@ -129,16 +135,17 @@ img {
 @keyframes fadein {
   from {
     opacity: 1;
+    display: block;
   }
   to {
     opacity: 0;
+    display: none;
   }
 }
 .spinner-container {
   background-color: rgba(255, 255, 255, 0.8);
   position: fixed;
   z-index: 9999;
-  overflow: show;
   margin: auto;
   top: 0;
   left: 0;
@@ -150,7 +157,6 @@ img {
 .spinner {
   position: fixed;
   z-index: 9999;
-  overflow: show;
   margin: auto;
   top: 0;
   left: 0;
@@ -256,7 +262,7 @@ img {
     position: relative;
   }
   .footer-nav {
-    gap: 7px;
+    gap: 20px;
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -413,7 +419,7 @@ a {
     display: flex;
     flex-direction: row;
     row-gap: 50px;
-    column-gap: 100px;
+    column-gap: 82px;
   }
 }
 .restaurants-cards img {
@@ -422,11 +428,6 @@ a {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
-}
-@media screen and (min-width: 1025px) {
-  .restaurants-cards a {
-    width: 45%;
-  }
 }
 
 .card {
@@ -438,6 +439,11 @@ a {
   object-fit: cover;
   position: relative;
   background-color: var(--white);
+}
+@media screen and (min-width: 1025px) {
+  .card {
+    width: 45%;
+  }
 }
 .card-nouveau {
   color: var(--green-font);
@@ -482,6 +488,9 @@ a {
 
 .image {
   position: absolute;
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .menu {
