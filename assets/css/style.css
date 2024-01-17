@@ -66,7 +66,6 @@ img {
   transition: background-color 1s ease;
   width: 186px;
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 .button-restaurants:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -93,12 +92,6 @@ img {
 
 .card-content-heart-filling:hover {
   opacity: 1;
-}
-
-.heart-restaurants {
-  position: absolute;
-  right: 50px;
-  top: 52px;
 }
 
 .fa-heart {
@@ -247,9 +240,14 @@ img {
   body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   .main-container {
     max-width: 1440px;
+  }
+  .heart-restaurants {
+    right: 340px;
+    top: 70px;
   }
   .fonctionnement {
     width: 31%;
@@ -274,6 +272,10 @@ img {
     position: absolute;
     top: 50px;
     right: 45px;
+  }
+  .menu {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 * {
@@ -493,12 +495,36 @@ a {
   object-fit: cover;
 }
 
+.image-restaurant {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .menu {
   background-color: var(--grey);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  padding-bottom: 40px;
+  margin-top: -50px;
   position: relative;
-  top: -50px;
+}
+
+.restaurant-part {
+  display: flex;
+  flex-direction: row;
+  padding-top: 32px;
+  justify-content: space-between;
+  padding-right: 55px;
+}
+@media screen and (min-width: 1025px) {
+  .restaurant-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 0px;
+  }
 }
 
 .restaurants-title {
@@ -509,7 +535,6 @@ a {
   font-weight: 400;
   line-height: normal;
   padding-left: 15px;
-  padding-top: 32px;
   position: relative;
 }
 
@@ -522,6 +547,12 @@ a {
 .restaurants-section {
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants-section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 .restaurants-section h2 {
   font-size: 16px;
@@ -569,6 +600,11 @@ a {
   position: absolute;
   right: 25px;
   bottom: 15px;
+}
+
+.button-align {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
