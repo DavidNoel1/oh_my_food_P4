@@ -240,7 +240,6 @@ img {
   body {
     display: flex;
     justify-content: center;
-    flex-direction: column;
   }
   .main-container {
     max-width: 1440px;
@@ -486,6 +485,10 @@ a {
   font-weight: 300;
   line-height: normal;
   padding: 5px 0 12px 16px;
+}
+
+.body {
+  flex-direction: column;
 }
 
 .image {
