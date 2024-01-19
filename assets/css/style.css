@@ -525,6 +525,7 @@ a {
   padding-bottom: 40px;
   margin-top: -50px;
   position: relative;
+  overflow: hidden;
 }
 
 .restaurant-part {
@@ -566,6 +567,14 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @media screen and (min-width: 1025px) {
   .restaurants-section {
     padding-left: 20%;
@@ -596,6 +605,16 @@ a {
   justify-content: space-between;
   overflow: hidden;
   flex-wrap: nowrap;
+  cursor: pointer;
+}
+.restaurants-section-card-animation-1 {
+  animation: slideIn 1s ease-in-out;
+}
+.restaurants-section-card-animation-2 {
+  animation: slideIn 1.5s ease-in-out;
+}
+.restaurants-section-card-animation-3 {
+  animation: slideIn 2s ease-in-out;
 }
 .restaurants-section-card-text {
   display: flex;
