@@ -30,15 +30,15 @@
     padding-right: 55px;
     align-items: center;
 
-    @media screen and (min-width: 1025px){
+    @media screen and (min-width: 1025px) {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
         padding-right: 0px;
     }
-       
-    
+
+
 
 }
 
@@ -58,108 +58,117 @@
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-    
+
 }
 
 .restaurants-section {
     padding-left: 15px;
     padding-right: 15px;
+
     @keyframes slideIn {
         from {
-          transform: translateX(100%);
+            transform: translateX(100%);
         }
-        to {
-          transform: translateX(0);
-        }
-      }
 
-    @media screen and (min-width: 1025px){
-        padding-left: 20%;
-        padding-right: 20%;  
+        to {
+            transform: translateX(0);
+        }
     }
-    
+
+    @media screen and (min-width: 1025px) {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
 
 
     & h2 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-transform: uppercase;
-    padding-top: 40px;
-    margin-bottom: 12px;
-    border-bottom: 3px solid var(--green);
-    box-sizing: border-box;
-    width: 40px;
-    padding-bottom: 10px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-top: 40px;
+        margin-bottom: 12px;
+        border-bottom: 3px solid var(--green);
+        box-sizing: border-box;
+        width: 40px;
+        padding-bottom: 10px;
     }
 
     &-card {
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    display: flex;
-    height: 70px;
-    object-fit: cover;
-    position:relative;
-    background-color: var(--white);
-    justify-content: space-between;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    cursor: pointer;
-
-    &-animation-1 {
-        animation: slideIn 1s ease-in-out;
-    }
-
-    &-animation-2 {
-        animation: slideIn 1.5s ease-in-out;
-    }
-
-    &-animation-3 {
-        animation: slideIn 2s ease-in-out;
-    }
-
-
-    
-
-    &-text {
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         display: flex;
-        flex-direction: column;
-        padding: 15px;
-        flex: 1;
+        height: 70px;
+        object-fit: cover;
+        position: relative;
+        background-color: var(--white);
+        justify-content: space-between;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        cursor: pointer;
 
-        & p {
-            font-size: 15.043px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+        &-animation-1 {
+            animation: slideIn 1s ease-in-out;
         }
-    }
 
-    &-check {
-        width: 59px;
-        height: 100%;
-        color: var(--white);
-        background-color: var(--green);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: -59px;
-        transition: all 0.7s;
+        &-animation-2 {
+            animation: slideIn 1.5s ease-in-out;
+        }
 
-        &:hover {
+        &-animation-3 {
+            animation: slideIn 2s ease-in-out;
+        }
+
+
+
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            flex: 1;
+            overflow: hidden;
+
+            & p {
+                font-size: 15.043px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &:hover &-check {
             margin-right: 0;
         }
-    }
 
-    & h3 {
-        font-size: 18px;
+        &-check {
+            width: 59px;
+            height: 100%;
+            color: var(--white);
+            background-color: var(--green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -59px;
+            transition: all 0.7s;
+        }
+
+        & h3 {
+            font-size: 18px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
-    }
+}
 
 .price {
     color: var(--second-grey);

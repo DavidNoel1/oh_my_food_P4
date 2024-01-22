@@ -410,6 +410,9 @@ a {
 .fonctionnement-button-icon {
   color: #7E7E7E;
 }
+.fonctionnement-button-icon-store {
+  color: var(--primary-color);
+}
 
 /**Restaurants**/
 .restaurants {
@@ -621,12 +624,19 @@ a {
   flex-direction: column;
   padding: 15px;
   flex: 1;
+  overflow: hidden;
 }
 .restaurants-section-card-text p {
   font-size: 15.043px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.restaurants-section-card:hover .restaurants-section-card-check {
+  margin-right: 0;
 }
 .restaurants-section-card-check {
   width: 59px;
@@ -639,14 +649,14 @@ a {
   margin-right: -59px;
   transition: all 0.7s;
 }
-.restaurants-section-card-check:hover {
-  margin-right: 0;
-}
 .restaurants-section-card h3 {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {
